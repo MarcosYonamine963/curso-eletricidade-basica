@@ -90,6 +90,24 @@ $$Q = \int_{t=1}^{2}i\ dt = \int_{1}^{2}(3t^2 -t)dt = \left(t^3 - \frac{t^2}{2} 
 
 ## Tensão
 
+Para deslocar um elétron em um condutor a um determinado sentido, é necessária uma força eletromotriz (FEM). Essa força também é conhecida como _tensão elétrica_ ou _diferença de potencial_. 
+
+>A tensão $v_{ab}$ entre dois pontos $a$ e $b$ em um circuito elétrico é a energia necessária para deslocar uma carga unitária de $a$ para $b$. A tensão é medida em volts ($V$).
+
+$$v_{ab} \triangleq \frac{dw}{dq}$$
+
+em que $w$ é a energia em joules ($J$).
+
+<p align="center">
+  <img height='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/825fac87-6163-499f-96ea-1ad868142d48" />
+</p>
+
+Observe a polaridade na representação da tensão. Podemos dizer que o ponto $a$ se encontra a um potencial de $v_{ab}$ volts mais alto que o ponto $b$. Podemos dizer ainda que, de $a$ para $b$ houve uma queda de tensão no valor de $v_{ab}$.
+
+Segue que, em geral, uma queda de tensão de $a$ para $b$ é equivalente a uma elevação de tensão de $b$ para $a$:
+
+$$v_{ab} = -v_{ba}$$
+
 ## Potência e energia
 
 ## Elementos de circuito
