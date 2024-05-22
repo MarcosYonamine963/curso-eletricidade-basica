@@ -110,4 +110,37 @@ $$v_{ab} = -v_{ba}$$
 
 ## Potência e energia
 
+>**Potência** é a velocidade com que se consome ou se absorve energia, medida em watts ($W$).
+
+Matematicamente, escrevemos como:
+
+$$p \triangleq \frac{dw}{dt}$$
+
+em que $w$ é a energia em joules ($J$), $t$ é o tempo em segundos ($s$) e $p$ é a potência em watts ($W$).
+
+Da equação anterior, temos ainda que:
+
+$$p = \frac{dw}{dt} = \frac{dw}{dq}\cdot\frac{dq}{dt} = v\cdot i$$
+
+$$p = v\cdot i$$
+
+O sentido da corrente e a polaridade da tensão desempenham um papel fundamental na determinação do sinal da potência em um elemento. 
+
+Pela _convenção de sinal passivo_, quando a corrente entra pela polaridade positiva da tensão, a potência nesse elemento será positiva ($p = +vi$). Quando a corrente entra pela polaridade negativa da tensão, a potência nesse elemento será negativa ($p = -vi$). 
+
+Quando a potência é positiva, dizemos que o elemento está absorvendo (consumindo) energia. Quando a potência é negativa, o elemento está liberando (fornecendo) energia ao circuito.
+
+<p align="center">
+  <img height='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/e62a6a6d-07e3-40a1-babe-46aff57ce820" />
+</p>
+
+>A _lei da conservação da energia_ diz que a soma algébrica da potência em um circuito, a qualquer instante de tempo, deve ser igual a zero.
+
+$$\sum p = 0$$
+
+Em outras palavras, a potência total fornecida ao circuito deve ser igual à potência total absorvida.
+
+
+## Consumo de energia
+
 ## Elementos de circuito
