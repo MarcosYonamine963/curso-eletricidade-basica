@@ -51,31 +51,42 @@ Ao definirmos corrente como a movimentação de cargas, é esperado que ela tenh
 
 Qual é a quantidade de carga representada por $4.600$ elétrons?
 
-**Solução**:
+
+<details>
+<summary>Solução</summary>
 
 Cada elétron tem carga igual a $e^- = -1,602\times 10^{-19}C$. Portanto, $4.600$ elétrons terão $4.600 \times (-1,602\times 10^{-19}C) = -7,369\times 10^{-16}C$
+
+</details>
 
 
 ### Exemplo 2
 
 A carga total entrando em um terminal é dada por $q = 5t\ sen(4\pi t)mC$. Calcule a corrente no instante $t = 0,5s$.
 
-**Solução**:
 
+<details>
+<summary>Solução</summary>
+  
 $$i = \frac{dq}{dt} = \frac{d}{dt}(5t\ sen(4\pi t))mC/s = 5sen(4\pi t) + 20\pi t\ cos(4\pi t) mA$$
 
 Para $t = 0,5s$:
 
 $$i = 5 sen(2\pi) + 10\pi cos(2\pi) = 0 + 10\pi = 31,42mA$$
 
+</details>
+
 ### Exemplo 3
 
 Determine a carga total que entra em um terminal entre os instantes $t = 1s$ e $t = 2s$ se a corrente que  passa pelo terminal é $i = (3t^2 - t)A$.
 
-**Solução**:
+
+<details>
+<summary>Solução</summary>
 
 $$Q = \int_{t=1}^{2}i\ dt = \int_{1}^{2}(3t^2 -t)dt = \left(t^3 - \frac{t^2}{2} \right) \Bigg|_{1}^{2} = (8 - 2) - \left( 1 - \frac{1}{2}\right) = 5,5C$$
 
+</details>
 
 ## Tensão
 
