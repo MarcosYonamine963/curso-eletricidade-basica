@@ -1,8 +1,9 @@
-# Aula 01 - Conceitos Básicos
+# Aula 01
 
-## Introdução
+Nesta aula serão apresentados os conceitos básicos de carga e corrente, tensão, potência e energia, além de algumas leis básicas, fundamentais para a análise de circuitos elétricos.
 
-Nesta aula serão apresentados os conceitos básicos de....
+# Conceitos básicos
+
 
 ## Carga e corrente
 
@@ -143,4 +144,136 @@ Em outras palavras, a potência total fornecida ao circuito deve ser igual à po
 
 ## Consumo de energia
 
-## Elementos de circuito
+>Energia é a capacidade de realizar trabalho, e é medida em joules ($J$).
+
+A energia absorvida ou fornecida (convenção sinal passivo) por um elemento do instante $t_0$ ao instante $t$ é
+
+$$w = \int_{t_0}^{t}p\ dt = \int_{t_0}^{t}vi\ dt = $$
+
+As concessionárias de energia elétrica medem a energia em watts-hora ($Wh$), em que
+
+$$1 Wh = 3.600 J$$
+
+### Exemplo 4
+
+Uma fonte de energia com uma corrente constante de $2A$ força a passagem dessa conrrente através de uma lâmpada por $10s$. Se forem liberados $2,3kJ$ na forma de energia luminosa e calorífica, calcule a queda de tensão na lâmpada.
+
+<details>
+<summary>Solução</summary>
+
+
+A carga total é:
+
+$$dq = i\ dt = 2A \cdot 10s = 20C$$
+
+A queda de tensão é:
+
+$$v = \frac{dw}{dq} = \frac{2,3\times 10^3J}{20C} = 115V$$
+
+
+</details>
+
+
+### Exemplo 5
+
+Quanta energia uma lâmpada de 100W consome em duas horas?
+
+<details>
+<summary>Solução</summary>
+
+Como a potência da lâmpada é uma constante,
+
+$$w = \int p\ dt = pt = 100W\cdot 2h = 200Wh$$
+
+Isso é o mesmo que:
+
+$$w = 200Wh \cdot 3.600\frac{J}{Wh} = 720\times 10^3 J = 720kJ$$
+
+
+</details>
+
+
+### Exemplo 6
+
+Se uma concessionária de energia cobra $30$ centavos por $kWh$ consumido, qual o valor cobrado referente a 5 lâmpadas fluorescentes de $40W$ cada, mantidas acesas durante 30 dias? Se todas as lâmpadas forem substituídas por lâmpadas de led de 10W, qual será a economia mensal?
+
+<details>
+<summary>Solução</summary>
+
+Como a potência das lâmpadas é constante, para 5 lâmpadas, temos que
+
+$$w = 5pt = 5\cdot 40W\cdot 30\cdot 24h = 144kWh$$
+
+O valor cobrado por essa energia será $(30centavos/kWh) \cdot 144kWh = 4.320 centavos = 43,2 reais$
+
+Substituindo as lâmpadas por led, temos:
+
+$$w = 5pt = 5\cdot 10W\cdot 30\cdot 24h = 36kWh$$
+
+O valor cobrado por essa energia será $(30centavos/kWh) \cdot 36kWh = 1.080 centavos = 10,8 reais$
+
+Portanto, a economia foi de $(43,2 - 10,8)reais = 32,4 reais$, que representa uma economia de
+
+$$\frac{32,4}{43,2}\times 100\\% = 75\\% $$
+
+
+</details>
+
+
+
+
+## Elementos de Circuitos
+
+Existem dois tipos de elementos encontrados nos circuitos elétricos: elementos _passivos_ e elementos _ativos_. Um elemento passivo não gera energia, porém, pode (ou não) armazenar energia. São o caso dos **resistores**, **capacitores** e **indutores**, por exemplo. Um elemento ativo é capaz de "gerar" energia em um circuito elétrico. É o caso das **fontes de tenão e de corrente**.
+
+A rigor, nenhuma energia pode ser criada (pela lei da conservação da energia). Toda energia é transformada. Por exemplo, um gerador elétrico de uma usina hidrelétrico transforma a energia cinética (rotação motor) em energia elétrica. Uma bateria converte a energia química em energia elétrica. Em circuitos elétricos, consideramos tais elementos como geradores, ou fontes de energia.
+
+Existem dois tipos de fontes: dependentes e independentes.
+
+>Uma **fonte independente ideal** é um elemento ativo que fornece uma tensão ou corrente específica que é completamente independente de outros elementos do circuito.
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/77f91fe7-e480-4338-8286-74eea73702c3" />
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/ecc051a6-4a17-4406-944a-af5a000d54e7" />
+</p>
+
+>Uma **fonte dependente** (ou **controlada**) **ideal** é um elemento ativo no qual a quantidade de energia é controlada por outra tensão ou corrente.
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/4ceeff06-bc4b-44fa-a8c6-6782480aac04" />
+</p>
+
+
+Existem quatro tipos de fontes dependentes:
+
+* Fonte de **tensão** controlada por **tensão**
+* Fonte de **tensão** controlada por **corrente**
+* Fonte de **corrente** controlada por **tensão**
+* Fonte de **corrente** controlada por **corrente**
+
+Ex: em cada circuito abaixo, a fonte da esquerda é uma fonte independente, e a da direita é uma dependente.
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/ab972ccd-b0f5-4cb6-a426-77bcdf5e59e4" />
+</p>
+
+
+# Leis básicas
+
+## Lei de Ohm
+
+## Nós, ramos e laços
+
+## Leis de Kirchhoff
+
+## Resistores em série e divisão de tensão
+
+## Resistores em paralelo e divisão de corrente
+
+## Transformações $Y-\Delta$ (estrela-triângulo)
+
+
+
+
+
+
