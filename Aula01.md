@@ -262,6 +262,72 @@ Ex: em cada circuito abaixo, a fonte da esquerda é uma fonte independente, e a 
 
 ## Lei de Ohm
 
+A _Resistência_ é a propriedade dos materiais de resistir à passagem de corrente elétrica. Essa propriedade é representada pela letra $R$, e depende do comprimento do material, da área da seção transversal e da _resistividade_ do material, conforme a seguinte relação: 
+
+$$R = \rho\frac{l}{A}$$
+
+em que $\rho$ é a _resistividade do material_, $l$ é o comprimento e $A$ é a área da seção transversal.
+
+<p align="center">
+  <img height='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/318c730a-8210-4371-8067-7ef115096a96" />
+</p>
+
+
+Os valores da _resistividade_ de alguns materiais são mostrados na tabela abaixo:
+
+<p align="center">
+  <img height='500' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/31d929a9-90fe-4488-bc0c-e20849b7481f" />
+</p>
+
+
+O elemento de circuito utilizado para modelar a propriedade da _resistência_ é o **resistor**. Observe a simbologia. A letra $R$ representa o valor resistência do resistor, medida em $\Omega$.
+
+<p align="center">
+  <img width='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/61053714-2247-407f-8525-a00d61b85cdf" />
+</p>
+
+
+>A **Lei de Ohm** afirma que a tensão $v$ em um resistor é diretamente proporcional à corrente $i$ através dele, e a resistência $R$ é a constante de proporcionalidade.
+
+Matematicamente, temos:
+
+$$v = Ri$$
+
+## Curto-circuito e Circuito aberto
+
+Em análises de circuitos, quando dizemos que um elemento está em curto-cirucito, equivale dizer que a resistência e a tensão em seus terminais podem ser aproximados a zero. Nesse caso, a corrente nesse elemento será determinada pelo restante do circuito.
+
+Quando dizemos que o elemento é um circuito aberto, equivale dizer que a corrente que passa por ele pode ser aproximada de zero, enquanto que a resistência pode ser aproximada de infinito. Nesse caso, a tensão nos terminais do elemento será determinada pelo restante do circuito.
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/834da3c2-46d1-4c3a-9e22-9f62b22a903a" />
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/293482c9-886e-4305-80c1-f6f91c2d4979" />
+</p>
+
+O comportamento de curto-circuito e circuito aberto pode ser modelado por uma chave interruptora ideal. Quando a chave está fechada (permitindo passagem de corrente), ela se comporta como um curto-circuito. Quando a chave está aberta (impedindo a passagem de corrente), ela se comporta como um circuito aberto.
+
+<p align="center">
+  <img width='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/4160df84-49ab-40cf-808f-3790569b99ec" />
+</p>
+
+## Potência com a Lei de Ohm
+
+Vimos que a potência pode ser expressa como 
+
+$$p = vi$$
+
+Mas, pela Lei de Ohm,
+
+$$v = Ri$$
+
+$$i = \frac{v}{R}$$
+
+temos outras possibilidades de representar a potência:
+
+$$p = vi = Ri^2 = \frac{v²}{R}$$
+
+
+
 ## Nós, ramos e laços
 
 ## Leis de Kirchhoff
