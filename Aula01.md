@@ -397,6 +397,78 @@ Outros dois conceitos importantes na topologia de circuitos são os coceitos de 
 
 ## Leis de Kirchhoff
 
+>A **Lei de Kirchhoff para corrente (LKC)** diz que a soma algébrica de todas as correntes em qualquer nó é zero.
+
+$$\sum_{n=1}^{N}i_n = 0$$
+
+Isso implica que a soma de todas as correntes que entram em um nó é igual à soma de todas as correntes que saem desse nó.
+
+### Exemplo
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/a8a074cd-bc4c-4547-94f6-387a63953946" />
+</p>
+
+$$i_1 + i_3 + i_4 = i_2 + i_5$$
+
+$$i_1 -i_2 + i_3 + i_4 - i_5 = 0$$
+
+>A **Lei de Kirchhoff para tensão (LKT)** diz que a soma algébrica de todas as tensões ao longo de qualquer caminho fechado (laço) é zero.
+
+Isso implica que a soma de todas as quedas de tensões devem ser iguais à soma de todas as elevações de tensões em um caminho fechado.
+
+### Exemplo
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/bf9dbd67-4860-4f80-915f-e8aa50277f26" />
+</p>
+
+
+$$v_1 + v_4 = v_2 + v_3 + v_5$$
+
+$$v_1 - v_2 - v_3 + v_4 - v_5 = 0$$
+
+### Exemplo
+
+Determine todas as equações das correntes nos nós $a$, $b$, $c$ e $d$ no circuito abaixo.
+
+obs: considere que, no centro do circuito, o cruzamento não é uma conexão elétrica, ou seja, $i_4$ entra no nó $c$, e $i_a$ sai do nó $d$. 
+
+<p align="center">
+  <img width='500' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/2fdb8908-746f-4a06-9d6d-8c95f8114750" />
+</p>
+
+
+<details>
+<summary>Solução</summary>
+
+* Nó $a$: $i_1 + i_4 - i_2 - i_5 = 0$
+* Nó $b$: $i_2 + i_3 - i_1 - i_b -i_a = 0$
+* Nó $c$: $i_b - i_3 - i_4 - i_c = 0$
+* Nó $d$: $i_5 + i_a + i_c = 0$
+
+</details>
+
+### Exemplo
+
+Determine todas as equações das tensões nos laços indicados ($a$, $b$, $c$ e $d$) no circuito abaixo.
+
+<p align="center">
+  <img width='500' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/cdd5fc5b-3102-436e-8730-da4cf4027bd9" />
+</p>
+
+<details>
+<summary>Solução</summary>
+
+* Laço $a$: $-v_1 + v_2 + v_4 - v_b - v_3 = 0$
+* Laço $b$: $-v_a + v_3 + v_5 = 0$
+* Laço $c$: $v_b - v_4 - v_c - v_6 - v_5 = 0$
+* Laço $d$: $-v_a - v_1 + v_2 - v_c + v_7 - v_d = 0$
+
+</details>
+
+
+
 ## Resistores em série e divisão de tensão
 
 ## Resistores em paralelo e divisão de corrente
