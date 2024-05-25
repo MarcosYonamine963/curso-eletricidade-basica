@@ -327,8 +327,73 @@ temos outras possibilidades de representar a potência:
 $$p = vi = Ri^2 = \frac{v²}{R}$$
 
 
+### Exemplo 
+
+Um ferro elétrico consome $2A$ quando ligado a uma tensão de $120V$. Determine a resistência interna dele.
+
+
+<details>
+<summary>Solução</summary>
+
+Pela Lei de Ohm, temos que:
+
+$$R = \frac{v}{i} = \frac{120V}{2A} = 60\Omega$$
+
+</details>
+
+
+### Exemplo
+
+Para o circito abaixo, determine a corrente $i$ e a potência no resistor.
+
+<p align="center">
+  <img width='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/bc174c61-180a-44c9-8475-3d3fc759fc4f" />
+</p>
+
+
+<details>
+<summary>Solução</summary>
+
+Pela Lei de Ohm, temos que:
+
+$$i = \frac{v}{R} = \frac{30V}{5k\Omega} = 6mA$$
+
+Portanto, a potência no resistor é:
+
+$$p = vi = 30V\cdot 6mA = 180mW$$
+
+</details>
+
+
+
 
 ## Nós, ramos e laços
+
+
+Uma vez que os elementos de um circuito elétrico podem ser interconectados
+de diversas maneiras, precisamos compreender alguns conceitos básicos de
+topologia de rede, que são os **nós**, **ramos** e os **laços**.
+
+
+>**Ramo** representa um elemento único como fonte de tensão ou resistor.
+
+> **Nó** é o ponto de conexão entre dois ou mais ramos.
+
+>**Laço** é qualquer caminho fechado em um circuito.
+
+Na figura abaixo, temos um circuito elétrico com 5 ramos e 3 nós ($a$, $b$ e $c$).
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/8c048745-36d9-4098-9455-51e33bb305a9" />
+</p>
+
+Observe que podemos formar no total, 6 caminhos fechados pelo circuito. Portanto, o número total de laços é 6. Porém, o circuito possui apenas 3 laços independentes. Diz-se que um laço é independente se ele contiver pelo menos um ramo que não faça parte de qualquer outro laço independente.
+
+Outros dois conceitos importantes na topologia de circuitos são os coceitos de elementos em série e em paralelo.
+
+>Dois ou mais elementos estão em **série** se eles compartilharem exclusivamente um único nó e, consequentemente, transportarem a mesma corrente.
+
+>Dois ou mais elementos estão em **paralelo** se eles estiverem conectados aos mesmos dois nós e, consequentemente, tiverem a mesma tensão entre eles.
 
 ## Leis de Kirchhoff
 
