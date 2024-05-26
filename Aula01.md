@@ -48,7 +48,7 @@ Ao definirmos corrente como a movimentação de cargas, é esperado que ela tenh
 </p>
 
 
-### Exemplo 1
+### Exemplo
 
 Qual é a quantidade de carga representada por $4.600$ elétrons?
 
@@ -61,7 +61,7 @@ Cada elétron tem carga igual a $e^- = -1,602\times 10^{-19}C$. Portanto, $4.600
 </details>
 
 
-### Exemplo 2
+### Exemplo
 
 A carga total entrando em um terminal é dada por $q = 5t\ sen(4\pi t)mC$. Calcule a corrente no instante $t = 0,5s$.
 
@@ -77,7 +77,7 @@ $$i = 5 sen(2\pi) + 10\pi cos(2\pi) = 0 + 10\pi = 31,42mA$$
 
 </details>
 
-### Exemplo 3
+### Exemplo
 
 Determine a carga total que entra em um terminal entre os instantes $t = 1s$ e $t = 2s$ se a corrente que  passa pelo terminal é $i = (3t^2 - t)A$.
 
@@ -154,7 +154,7 @@ As concessionárias de energia elétrica medem a energia em watts-hora ($Wh$), e
 
 $$1 Wh = 3.600 J$$
 
-### Exemplo 4
+### Exemplo
 
 Uma fonte de energia com uma corrente constante de $2A$ força a passagem dessa conrrente através de uma lâmpada por $10s$. Se forem liberados $2,3kJ$ na forma de energia luminosa e calorífica, calcule a queda de tensão na lâmpada.
 
@@ -174,7 +174,7 @@ $$v = \frac{dw}{dq} = \frac{2,3\times 10^3J}{20C} = 115V$$
 </details>
 
 
-### Exemplo 5
+### Exemplo
 
 Quanta energia uma lâmpada de 100W consome em duas horas?
 
@@ -193,7 +193,7 @@ $$w = 200Wh \cdot 3.600\frac{J}{Wh} = 720\times 10^3 J = 720kJ$$
 </details>
 
 
-### Exemplo 6
+### Exemplo
 
 Se uma concessionária de energia cobra $30$ centavos por $kWh$ consumido, qual o valor cobrado referente a 5 lâmpadas fluorescentes de $40W$ cada, mantidas acesas durante 30 dias? Se todas as lâmpadas forem substituídas por lâmpadas de led de 10W, qual será a economia mensal?
 
@@ -292,6 +292,15 @@ O elemento de circuito utilizado para modelar a propriedade da _resistência_ é
 Matematicamente, temos:
 
 $$v = Ri$$
+
+Porém, devemos também considerar o sentido que a corrente flui em relação à polaridade da queda de tensão no resistor:
+
+<p align="center">
+  <img width='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/b92c355d-4346-4d22-8cb3-a46cf36358dd" />
+</p>
+
+
+
 
 ## Curto-circuito e Circuito aberto
 
@@ -468,8 +477,193 @@ Determine todas as equações das tensões nos laços indicados ($a$, $b$, $c$ e
 </details>
 
 
+### Exemplo
+
+Determine as tensões $v_1$ e $v_2$ no circuito.
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/7e4d17e4-2aa7-46be-be83-5d2d0390a390" />
+</p>
+
+
+
+<details>
+<summary>Solução</summary>
+
+Inicialmente, consideremos que uma corrente $i$ flua pelo laço, conforme mostra a figura seguinte.
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/145c42dd-5602-4bf2-a9b4-547f0e5c9b13" />
+</p>
+
+Pela Lei de Ohm, temos que 
+
+$$v_1 = 2i \qquad\text{e}\qquad v_2 = -3i$$
+
+Aplicando a LKT no laço, temos:
+
+$$-20 + v_1 - v_2 = 0$$
+
+$$-20 +2i +3i = 0$$
+
+$$5i = 20$$
+
+$$i = 4A$$
+
+Finalmente,
+
+$$v_1 = 2i = 2\cdot 4 = 8V\qquad \text{3}\qquad v_2 = -3i = -3\cdot 4 = -12V$$
+
+</details>
+
+### Exemplo
+
+Determine $v_0$ e $i$ no circuito.
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/8c9c8870-8479-444e-bc93-1262ffc29aca" />
+</p>
+
+<details>
+<summary>Solução</summary>
+
+Inicialmente, consideremos que uma corrente $i$ flua pelo laço, conforme mostra a figura seguinte. Observe que a corrente do laço trata-se da mesma corrente $i$.
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/27f7d6e5-efaf-4708-bb66-0d9e331eb8c6" />
+</p>
+
+Aplicando a LKT no laço, temos:
+
+$$-12 + 4i + 2v_0 - 4 - v_0 = 0$$
+
+$$-16 + 4i + v_0 = 0$$
+
+Aplicando a Lei de Ohm no resistor de $6\Omega$ temos
+
+$$v_0 = -6i$$
+
+Substituindo na equação da malha, temos:
+
+$$-16 + 4i - 6i = 0$$
+
+$$-2i = 16$$
+
+$$i = -8A$$
+
+Assim, retornando à Lei de Ohm no resistor de $6\Omega$, temos:
+
+$$v_0 = -6i = -6\cdot (-8) = 48V$$
+
+
+</details>
+
+
+### Exemplo
+
+Determine a corrente $i_0$ e a tensão $v_0$ no circuito.
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/fc731295-8820-4520-88c5-69b4427d21c6" />
+</p>
+
+
+<details>
+<summary>Solução</summary>
+
+Aplicando a LKC no nó $a$, obtemos:
+
+$$3 + 0,5i_0 = i_0$$
+
+$$i_0 = 6A$$
+
+
+Pela Lei de Ohm no resistor, temos:
+
+$$v_0 = 4i_0 = 4\cdot 6 = 24A$$
+
+</details>
+
+
+### Exemplo
+
+Determine as correntes e tensões no circuito.
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/d210c779-fe6c-4da1-88dd-2a0fe66951ea" />
+</p>
+
+
+<details>
+<summary>Solução</summary>
+
+Aplicando a Lei de Ohm nos resistores, temos:
+
+$$v_1 = 8i_1\qquad v_2 = 3i_2\qquad v_3 = 6i_3$$
+
+Aplicando a LKC no nó $a$, temos:
+
+$$i_1 - i_2 - i_3 = 0$$
+
+Agora, consideremos os seguintes laços:
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/fadb2988-89d8-4489-a4d3-eb0f25cfeed2" />
+</p>
+
+* Aplicando LKT no laço 1, temos:
+
+$$-30 + v_1 + v_2 = 0$$
+
+Expressando isso em termos das correntes (obtidas pela Lei de Ohm):
+
+$$-30 + 8i_1 + 3i_2 = 0$$
+
+Isolando-se $i_1$:
+
+$$i_1 = \frac{30 - 3i_2}{8}$$
+
+* Aplicando LKT no laço 2, temos:
+
+$$-v_2 + v_3 = 0$$
+
+$$v_3 = v_2$$
+
+Observe que isso já era esperado, pois os resistores estão em paralelo.
+
+Expressando isso em termos das corrrentes, temos:
+
+$$6i_3 = 3i_2$$
+
+$$i_3 = \frac{i_2}{2}$$
+
+Da LKC (nó $a$), temos:
+
+$$i_1 - i_2 - i_3 = 0$$
+
+$$\frac{30-3i_2}{8} - i_2 - \frac{i_2}{2} = 0$$
+
+Resolvendo a equação, obtemos o valor de $i_2$:
+
+$$i_2 = 2A$$
+
+Com o valor de $i_2$, podemos tereminar o restante dos valores do circuito:
+
+$$i_1 = 3A\quad i_3 = 1A\quad v_1 = 24V\quad v_2 = 6V\quad v_3 = 6V$$
+
+
+</details>
+
+
 
 ## Resistores em série e divisão de tensão
+
+
+
+
+
+
+
 
 ## Resistores em paralelo e divisão de corrente
 
