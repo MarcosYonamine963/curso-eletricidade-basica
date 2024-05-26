@@ -47,6 +47,7 @@ Ao definirmos corrente como a movimentação de cargas, é esperado que ela tenh
   <img width='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/4a40187e-a3d3-4f93-a2e8-c4ec6a6929b1" />
 </p>
 
+---
 
 ### Exemplo
 
@@ -60,6 +61,7 @@ Cada elétron tem carga igual a $e^- = -1,602\times 10^{-19}C$. Portanto, $4.600
 
 </details>
 
+---
 
 ### Exemplo
 
@@ -77,6 +79,8 @@ $$i = 5 sen(2\pi) + 10\pi cos(2\pi) = 0 + 10\pi = 31,42mA$$
 
 </details>
 
+---
+
 ### Exemplo
 
 Determine a carga total que entra em um terminal entre os instantes $t = 1s$ e $t = 2s$ se a corrente que  passa pelo terminal é $i = (3t^2 - t)A$.
@@ -88,6 +92,8 @@ Determine a carga total que entra em um terminal entre os instantes $t = 1s$ e $
 $$Q = \int_{t=1}^{2}i\ dt = \int_{1}^{2}(3t^2 -t)dt = \left(t^3 - \frac{t^2}{2} \right) \Bigg|_{1}^{2} = (8 - 2) - \left( 1 - \frac{1}{2}\right) = 5,5C$$
 
 </details>
+
+---
 
 ## Tensão
 
@@ -154,13 +160,14 @@ As concessionárias de energia elétrica medem a energia em watts-hora ($Wh$), e
 
 $$1 Wh = 3.600 J$$
 
+---
+
 ### Exemplo
 
 Uma fonte de energia com uma corrente constante de $2A$ força a passagem dessa conrrente através de uma lâmpada por $10s$. Se forem liberados $2,3kJ$ na forma de energia luminosa e calorífica, calcule a queda de tensão na lâmpada.
 
 <details>
 <summary>Solução</summary>
-
 
 A carga total é:
 
@@ -170,9 +177,9 @@ A queda de tensão é:
 
 $$v = \frac{dw}{dq} = \frac{2,3\times 10^3J}{20C} = 115V$$
 
-
 </details>
 
+---
 
 ### Exemplo
 
@@ -189,9 +196,9 @@ Isso é o mesmo que:
 
 $$w = 200Wh \cdot 3.600\frac{J}{Wh} = 720\times 10^3 J = 720kJ$$
 
-
 </details>
 
+---
 
 ### Exemplo
 
@@ -216,11 +223,9 @@ Portanto, a economia foi de $(43,2 - 10,8)reais = 32,4 reais$, que representa um
 
 $$\frac{32,4}{43,2}\times 100\\% = 75\\% $$
 
-
 </details>
 
-
-
+---
 
 ## Elementos de Circuitos
 
@@ -335,11 +340,11 @@ temos outras possibilidades de representar a potência:
 
 $$p = vi = Ri^2 = \frac{v²}{R}$$
 
+---
 
 ### Exemplo 
 
 Um ferro elétrico consome $2A$ quando ligado a uma tensão de $120V$. Determine a resistência interna dele.
-
 
 <details>
 <summary>Solução</summary>
@@ -350,6 +355,7 @@ $$R = \frac{v}{i} = \frac{120V}{2A} = 60\Omega$$
 
 </details>
 
+---
 
 ### Exemplo
 
@@ -358,7 +364,6 @@ Para o circito abaixo, determine a corrente $i$ e a potência no resistor.
 <p align="center">
   <img width='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/bc174c61-180a-44c9-8475-3d3fc759fc4f" />
 </p>
-
 
 <details>
 <summary>Solução</summary>
@@ -373,11 +378,9 @@ $$p = vi = 30V\cdot 6mA = 180mW$$
 
 </details>
 
-
-
+---
 
 ## Nós, ramos e laços
-
 
 Uma vez que os elementos de um circuito elétrico podem ser interconectados
 de diversas maneiras, precisamos compreender alguns conceitos básicos de
@@ -412,6 +415,8 @@ $$\sum_{n=1}^{N}i_n = 0$$
 
 Isso implica que a soma de todas as correntes que entram em um nó é igual à soma de todas as correntes que saem desse nó.
 
+---
+
 ### Exemplo
 
 <p align="center">
@@ -422,9 +427,13 @@ $$i_1 + i_3 + i_4 = i_2 + i_5$$
 
 $$i_1 -i_2 + i_3 + i_4 - i_5 = 0$$
 
+---
+
 >A **Lei de Kirchhoff para tensão (LKT)** diz que a soma algébrica de todas as tensões ao longo de qualquer caminho fechado (laço) é zero.
 
 Isso implica que a soma de todas as quedas de tensões devem ser iguais à soma de todas as elevações de tensões em um caminho fechado.
+
+---
 
 ### Exemplo
 
@@ -437,6 +446,8 @@ $$v_1 + v_4 = v_2 + v_3 + v_5$$
 
 $$v_1 - v_2 - v_3 + v_4 - v_5 = 0$$
 
+---
+
 ### Exemplo
 
 Determine todas as equações das correntes nos nós $a$, $b$, $c$ e $d$ no circuito abaixo.
@@ -447,7 +458,6 @@ obs: considere que, no centro do circuito, o cruzamento não é uma conexão el�
   <img width='500' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/2fdb8908-746f-4a06-9d6d-8c95f8114750" />
 </p>
 
-
 <details>
 <summary>Solução</summary>
 
@@ -457,6 +467,8 @@ obs: considere que, no centro do circuito, o cruzamento não é uma conexão el�
 * Nó $d$: $i_5 + i_a + i_c = 0$
 
 </details>
+
+---
 
 ### Exemplo
 
@@ -476,6 +488,7 @@ Determine todas as equações das tensões nos laços indicados ($a$, $b$, $c$ e
 
 </details>
 
+---
 
 ### Exemplo
 
@@ -484,8 +497,6 @@ Determine as tensões $v_1$ e $v_2$ no circuito.
 <p align="center">
   <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/7e4d17e4-2aa7-46be-be83-5d2d0390a390" />
 </p>
-
-
 
 <details>
 <summary>Solução</summary>
@@ -515,6 +526,8 @@ Finalmente,
 $$v_1 = 2i = 2\cdot 4 = 8V\qquad \text{3}\qquad v_2 = -3i = -3\cdot 4 = -12V$$
 
 </details>
+
+---
 
 ### Exemplo
 
@@ -555,9 +568,9 @@ Assim, retornando à Lei de Ohm no resistor de $6\Omega$, temos:
 
 $$v_0 = -6i = -6\cdot (-8) = 48V$$
 
-
 </details>
 
+---
 
 ### Exemplo
 
@@ -566,7 +579,6 @@ Determine a corrente $i_0$ e a tensão $v_0$ no circuito.
 <p align="center">
   <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/fc731295-8820-4520-88c5-69b4427d21c6" />
 </p>
-
 
 <details>
 <summary>Solução</summary>
@@ -577,13 +589,13 @@ $$3 + 0,5i_0 = i_0$$
 
 $$i_0 = 6A$$
 
-
 Pela Lei de Ohm no resistor, temos:
 
 $$v_0 = 4i_0 = 4\cdot 6 = 24A$$
 
 </details>
 
+---
 
 ### Exemplo
 
@@ -592,7 +604,6 @@ Determine as correntes e tensões no circuito.
 <p align="center">
   <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/d210c779-fe6c-4da1-88dd-2a0fe66951ea" />
 </p>
-
 
 <details>
 <summary>Solução</summary>
@@ -651,23 +662,167 @@ Com o valor de $i_2$, podemos tereminar o restante dos valores do circuito:
 
 $$i_1 = 3A\quad i_3 = 1A\quad v_1 = 24V\quad v_2 = 6V\quad v_3 = 6V$$
 
-
 </details>
 
-
+---
 
 ## Resistores em série e divisão de tensão
 
+>A **resistência equivalente** de qualquer número de resistores ligados em **série** é a soma das resistências individuais.
 
+Matematicamente, para $N$ resistores em série, a resistência equivalente será:
 
+$$R_{eq} = \sum_{n = 1}^{N}R_n = R_1 + R_2 + \ldots + R_N$$
 
+---
 
+<details>
+<summary>Demonstração</summary>
 
+Considerermos inicialmente um circuito com dois resistores em série conectados a uma fonte de tensão:
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/de0892b5-bb80-4ee3-8ff3-9b9a254beb10" />
+</p>
+
+Pela Lei de Ohm, temos que, para cada resistor,
+
+$$v_1 = iR_1 \qquad v_2 = iR_2$$
+
+Aplicando LKT no laço (sentido horário), temos:
+
+$$-v + v_1 + v_2 = 0$$
+
+$$v = v_1 + v_2$$
+
+Combinando com a Lei de Ohm, temos:
+
+$$v = iR_1 + iR_2 = i(R_1 + R_2)$$
+
+que podemos reescrever como:
+
+$$v = iR_{eq}$$
+
+em que 
+
+$$R_{eq} = R_1 + R_2$$
+
+Extendendo-se esta análise para $N$ resistores, é possível demosntrar que 
+
+$$R_{eq} = \sum_{n = 1}^{N}R_n = R_1 + R_2 + \ldots + R_N$$
+
+</details>
+
+---
+
+Quando dois ou mais resistores estão conectados em série, ocorre entre eles uma divisão de tensão.
+
+Por exemplo, considere dois resistores em série, conforme o circuito abaixo:
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/de0892b5-bb80-4ee3-8ff3-9b9a254beb10" />
+</p>
+
+As tensões em cada resistor são dadas por:
+
+$$v_1 = v\frac{R_1}{R_1 + R_2} \qquad v_2 = v\frac{R_2}{R_1 + R_2}$$
+
+Genericamente, para uma ligação em série de $n$ resistores, com uma tensão de entrada $v$, a tensão $v_j$ sobre o resistor $R_j$ será:
+
+$$v_j = v\frac{R_j}{R_1 + R_2 + \ldots + R_n} = v\frac{R_j}{R_{eq}}$$
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/01241a03-b1ef-48da-9993-3ada5a94f222" />
+</p>
 
 
 ## Resistores em paralelo e divisão de corrente
 
+
+>O **inverso da resistência equivalente** de $N$ resistores conectados em **paralelo** é a soma dos inversos de cada resistência.
+
+Matematicamente, para $N$ resistores em paralelo, a resistência equivalente será:
+
+$$\frac{1}{R_{eq}} = \sum_{n=1}^{N}\frac{1}{R_n} = \frac{1}{R_1} + \frac{1}{R_2} + \ldots + \frac{1}{R_N}$$
+
+* Para $2$ resistores em paralelo:
+
+$$R_{eq} = \frac{R_1 R_2}{R_1 + R_2}$$
+
+* Para $N$ resistores $R$ **iguais** em paralelo:
+
+$$R_{eq} = \frac{R}{N}$$
+
+---
+
+<details>
+<summary>Demonstração</summary>
+
+Considerermos inicialmente um circuito com dois resistores em paralelo conectados a uma fonte de tensão:
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/1fdcd265-1f8b-4eaa-abcc-84a29f143345" />
+</p>
+
+Pela Lei de Ohm, temos que,
+
+$$v = i_1 R_1 = i_2 R_2$$
+
+ou ainda,
+
+$$i_1 = \frac{v}{R_1} \qquad i_2 = \frac{v}{R_2}$$
+
+Aplicando LKC no nó $a$, temos:
+
+$$i = i_1 + i_2$$
+
+Combinando com a Lei de Ohm, temos:
+
+$$i = \frac{v}{R_1} + \frac{v}{R_2} = v\left( \frac{1}{R_1} + \frac{1}{R_2}\right)$$
+
+que podemos reescrever como:
+
+$$i = \frac{v}{R_{eq}}$$
+
+em que 
+
+$$\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2}$$
+
+Extendendo-se esta análise para $N$ resistores, é possível demosntrar que 
+
+$$\frac{1}{R_{eq}} = \sum_{n=1}^{N}\frac{1}{R_n} = \frac{1}{R_1} + \frac{1}{R_2} + \ldots + \frac{1}{R_N}$$
+
+</details>
+
+---
+
+Quando dois ou mais resistores estão conectados em paralelo, ocorre entre eles uma divisão de corrente.
+
+Por exemplo, considere dois resistores em paralelo, conforme o circuito abaixo:
+
+<p align="center">
+  <img width='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/1fdcd265-1f8b-4eaa-abcc-84a29f143345" />
+</p>
+
+
+As correntes em cada resistor são dadas por:
+
+$$i_1 = i\frac{R_2}{R_1 + R_2} \qquad i_2 = i\frac{R_1}{R_1 + R_2}$$
+
+Genericamente, para uma ligação em paralelo de $n$ resistores, com uma corrente de entrada $i$, a corrente $i_j$ sobre o resistor $R_j$ será:
+
+$$i_j = i\frac{R_{eq}}{R_j}$$
+
+<p align="center">
+  <img width='600' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/5b16348b-002b-435b-a428-97602dbafeee" />
+</p>
+
+
+
+
+
 ## Transformações $Y-\Delta$ (estrela-triângulo)
+
 
 
 
