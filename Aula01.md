@@ -817,15 +817,231 @@ $$i_j = i\frac{R_{eq}}{R_j}$$
   <img width='600' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/5b16348b-002b-435b-a428-97602dbafeee" />
 </p>
 
+---
+
+### Exemplo
+
+Determine $R_{eq}$ para o circuito.
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/f5854f0e-2a9c-44ed-9dae-a692eb780d53" />
+</p>
 
 
+<details>
+<summary>Solução</summary>
+
+* Resistores de $6\Omega$ e $3\Omega$ em paralelo:
+
+$$6\Omega || 3\Omega = \frac{6 \times 3}{6 + 3} = \frac{18}{9} = 2\Omega$$
+
+* Resistores de $1\Omega$ e $5\Omega$ em série:
+
+$$1\Omega + 5\Omega = 6\Omega$$
+
+Circuito equivalente:
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/a2236bc9-d920-4ca9-9113-52ceb2a968f0" />
+</p>
+
+* Resistores de $(2\Omega + 2\Omega)$ e $6\Omega$ em paralelo:
+
+$$4\Omega||6\Omega = \frac{4 \times 6}{4 + 6} = \frac{24}{10} = 2,4\Omega$$
+
+Circuito equivalente:
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/1e871fbc-6f26-4b17-bbd9-15c084d1a780" />
+</p>
+
+Assim, temos:
+
+$$R_{eq} = 4\Omega + 2,4\Omega + 8\Omega = 14,4\Omega$$
+
+</details>
+
+---
+
+### Exemplo
+
+Determine $i_0$ e $v_0$ no circuito, e calcule a potência dissipada no resistor de $3\Omega$.
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/c7345751-64d1-4cf2-9f2b-a34c03626025" />
+</p>
+
+
+<details>
+<summary>Solução</summary>
+
+* Resistores de $6\Omega$ e $3\Omega$ em paralelo:
+
+$$6\Omega || 3\Omega = \frac{6 \times 3}{6 + 3} = 2\Omega$$
+
+Circuito equivalente:
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/d372cec3-df5b-4b0a-8edf-7206b4ecfff3" />
+</p>
+
+Pela Lei de Ohm, podemos determinar a corrente $i$:
+
+$$i = \frac{12V}{(4+2)\Omega} = 2A$$
+
+* Divisão de tensão ($v_0$):
+
+$$v_0 = 12\frac{2}{2+4} = 4V$$
+
+Agora que temos os valores de $v_0$ e de $i$, retornando ao circuito original, $i_0$ pode ser determinado de duas formas: pela Lei de Ohm no resistor de $3\Omega$, ou pela divisão de correntes.
+
+* Lei de Ohm:
+
+$$i_0 = \frac{v_0}{3} = \frac{4}{3}A$$
+
+* Divisão de correntes:
+
+$$i_0 = i\frac{4}{2+4} = 2\frac{4}{6} = \frac{4}{3}A$$
+
+* Potência dissipada no resistor de $3\Omega$:
+
+$$p = v_0 i_0 = 4\frac{4}{3} = 5,333W$$
+
+</details>
+
+---
+
+### Exemplo
+
+Determine a tensão $v_0$, a potência fornecida pela fonte de corrente e a potência absorvida por cada resistor do circuito.
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/589daf01-f3d3-4102-8da1-75821c40daae" />
+</p>
+
+
+
+<details>
+<summary>Solução</summary>
+
+Os resistores de $6k\Omega$ e $12k\Omega$ estão em série, formando um equivalente de $6 + 12 = 18k\Omega$. Assim, podemos ter um circuito equivalente:
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/fe752ae8-e059-490b-a8e9-7d85e2a8d32f" />
+</p>
+
+Agora, aplicamos a divisão de corrente para determinar $i_1$ e $i_2$:
+
+$$i_1 = i_0\frac{18}{9 + 18} = 30mA\frac{18}{9+18} = 20mA$$
+
+$$i_2 = i_0\frac{9}{9 + 18} = 30mA\frac{18}{9+18} = 10mA$$
+
+Assim, pela Lei de Ohm,
+
+$$v_0 = 9k\Omega\cdot i_1 = 9k\Omega\cdot20mA = 180V$$
+
+A potência fornecida pela fonte é:
+
+$$p_0 = v_0 i_0 = 180V\cdot 30mA = 5,4W$$
+
+A potência absorvida pelo resistor de $12k\Omega$ é:
+
+$$p = i_2^2\cdot 12k\Omega = (10mA)^2 \cdot 12k\Omega = 1,2W$$
+
+A potência absorvida pelo resistor de $6k\Omega$ é:
+
+$$p = i_2^2\cdot 6k\Omega = (10mA)^2 \cdot 6k\Omega = 0,6W$$
+
+A potência absorvida pelo resistor de $9k\Omega$ é:
+
+$$p = v_0 i_1 = 180V\cdot 20mA = 3,6W$$
+
+
+</details>
+
+---
 
 
 ## Transformações $Y-\Delta$ (estrela-triângulo)
 
 
+Muitas vezes surgem situações na análise de circuitos em que os resistores não estão nem em paralelo nem em série. Porém, muitos desses circuitos podem ser simplificados usando-se redes equivalentes de três terminais, que correspondem à rede $Y$ (Estrela) e à rede $\Delta$ (Triângulo).
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/54f66644-890d-4feb-a690-9c1ed418ec08" /><br/>
+  Rede $\Delta$ (triângulo ou $\Pi$)
+</p>
+
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/1359cdc2-5d5c-42d0-b45b-41ccad92c8ab" /><br/>
+  Rede $Y$ (estrela ou $T$)
+</p>
+
+
+<p align="center">
+  <img height='250' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/ec443663-427a-4c9c-9105-05286c9ea2cf" /><br/>
+  Transformação $\Delta-Y$
+</p>
+
+$$R_1 = \frac{R_b R_c}{R_a + R_b + R_c}$$
+
+$$R_2 = \frac{R_c R_a}{R_a + R_b + R_c}$$
+
+$$R_3 = \frac{R_a R_b}{R_a + R_b + R_c}$$
+
+$$R_a = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_1}$$
+
+$$R_b = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_2}$$
+
+$$R_c = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_3}$$
 
 
 
+---
 
+### Exemplo
+
+Determine a corrente elétrica fornecida pela fonte de tensão no circuito.
+
+<p align="center">
+  <img height='250' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/7fbbfefb-34c8-4e2a-b7b2-74cd4cd9cf85" />
+</p>
+
+<details>
+<summary>Solução</summary>
+
+O problema poderá ser resolvido depois de determinarmos a resistência equivalente nos terminais da fonte. Para isso, podemos substituir a rede em $\Delta$ superior, formado pelos resistores de $100\Omega$, $125\Omega$ e $25\Omega$, em uma rede em $Y$:
+
+<p align="center">
+  <img height='250' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/107af2dd-e1b8-4464-9e78-a0c3b069233b" />
+</p>
+
+$$R_1 = \frac{100\times 125}{100 + 125 + 25} = 50\Omega$$
+
+$$R_2 = \frac{125\times 25}{100 + 125 + 25} = 12,5\Omega$$
+
+$$R_3 = \frac{100\times 25}{100 + 125 + 25} = 10\Omega$$
+
+Assim, o circuito equivalente fica:
+
+<p align="center">
+  <img height='250' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/370b8c92-57d8-477f-b048-a4a5e6e8802c" />
+</p>
+
+Observe que $10\Omega$ está em série com $40\Omega$, formando $50\Omega$. Também, $12,5\Omega$ está em série com $37,5\Omega$ formando $50\Omega$. Assim, temos dois resistores de $50\Omega$ em paralelo.
+
+$$R_{eq} = 5\Omega + 50\Omega + \frac{50\Omega\cdot 50\Omega}{50\Omega + 50\Omega} = 80\Omega$$
+
+Finalmente,
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/89c6225f-9075-42b2-b61f-4716f6f140d4" />
+</p>
+
+$$i = \frac{40V}{80\Omega} = 0,5A$$
+
+</details>
+
+---
 
