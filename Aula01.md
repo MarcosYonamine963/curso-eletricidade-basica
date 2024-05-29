@@ -229,7 +229,7 @@ $$\large \frac{32,4}{43,2}\times 100\\% = 75\\% $$
 
 ## Elementos de Circuitos
 
-Existem dois tipos de elementos encontrados nos circuitos elétricos: elementos _passivos_ e elementos _ativos_. Um elemento passivo não gera energia, porém, pode (ou não) armazenar energia. São o caso dos **resistores**, **capacitores** e **indutores**, por exemplo. Um elemento ativo é capaz de "gerar" energia em um circuito elétrico. É o caso das **fontes de tenão e de corrente**.
+Existem dois tipos de elementos encontrados nos circuitos elétricos: elementos _passivos_ e elementos _ativos_. Um elemento passivo não gera energia, porém, pode (ou não) armazenar energia. São o caso dos **resistores**, **capacitores** e **indutores**, por exemplo. Um elemento ativo é capaz de "gerar" energia em um circuito elétrico. É o caso das **fontes de tensão e de corrente**.
 
 A rigor, nenhuma energia pode ser criada (pela lei da conservação da energia). Toda energia é transformada. Por exemplo, um gerador elétrico de uma usina hidrelétrico transforma a energia cinética (rotação motor) em energia elétrica. Uma bateria converte a energia química em energia elétrica. Em circuitos elétricos, consideramos tais elementos como geradores, ou fontes de energia.
 
