@@ -184,7 +184,231 @@ $$\large v_4 = -46,67V$$
 
 ## Análise de malhas
 
-$$\large olair$$
+>**Malha** é um laço que não contém nenhum outro laço em seu interior.
+
+* Etapas na determinação de correntes de malha:
+
+1. Atribua correntes de malha $\large i_1$, $\large i_2$, ... , $\large i_n$ a $\large n$ malhas.
+
+2. Aplique a LKT a cada uma das $\large n$ malhas. Use a Lei de Ohm para expressar as tensões em termos de correntes de malha.
+
+3. Resolva as $\large n$ equações simultâneas resultantes para obter as correntes de malha.
+
+---
+
+### Exemplo 
+
+Considere o seguinte circuito com duas malhas:
+
+<p align="center">
+  <img height='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/949b75c3-9301-4346-95e8-6f3a3f8cee27" />
+</p>
+
+Temos que $\large i_1$ e $\large i_2$ são as correntes de malha.
+
+Inicialmente, aplicaremos a LKT em cada malha.
+
+* LKT na malha 1:
+
+$$\large -V_1 + R_1 i_1 + R_3(i_1 - i_2) = 0$$
+
+$$\large (R_1 + R_3)i_1 - R_3 i_2 = V_1$$
+
+
+
+* LKT na malha 2:
+
+
+$$\large R_2 i_2 + V_2 + R_3 (i_2 - i_1) = 0$$
+
+$$\large -R_3 i_1 + (R_2 + R_3)i_2  = -V_2$$
+
+
+Colocando as duas equações na forma matricial, temos:
+
+
+$$\large \begin{bmatrix} R_1 + R_3 & -R_3 \\\ -R_3 & R_2 + R_3 \end{bmatrix} \begin{bmatrix} i_1 \\\ i_2 \end{bmatrix} = \begin{bmatrix} V_1 \\\ -V_2 \end{bmatrix}$$
+
+
+Observe que as correntes de ramo são diferentes das correntes de malha, a menos que a malha esteja isolada.
+
+$$\large I_1 = i_1 \qquad I_2 = i_2 \qquad I_3 = i_1 - i_2$$
+
+
+---
+
+### Exemplo
+
+Use o método de malhas para encontrar a corrente $\large I_0$ no circuito.
+
+<p align="center">
+  <img height='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/cd5f5256-0434-478c-b201-da00eff21a5d" />
+</p>
+
+
+<details>
+<summary>Solução</summary>
+
+* LKT na malha 1:
+
+$$\large -24 +10(i_1 - i_2) + 12(i_1 - i_3) = 0$$
+
+$$\large 11i_1 - 5i_2 - 6i_3 = 12$$
+
+* LKT na malha 2:
+
+$$\large 24i_2 + 4(i_2 - i_3) + 10(i_2 - i_1) = 0$$
+
+$$\large -5i_1 + 19i_2 - 2i_3 = 0$$
+
+* LKT na malha 3:
+
+$$\large 4I_0 + 12(i_3 - i_1) + 4(i_3 - i_2) = 0$$
+
+* Para o nó $\large A$, temos $\large I_0 = i_1 - i_2$, de modo que,
+
+$$\large 4(i_1 - i_2) + 12(i_3 - i_1) + 4(i_3 - i_2) = 0$$
+
+$$\large -i_1 - i_2 + 2i_3 = 0$$
+
+
+Na forma matricial, temos
+
+<p align="center">
+  <img height='100' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/7c4aa456-19f6-4f2d-ad93-a1bd506ba89c" />
+</p>
+
+[comment]: <> (Latex math mode bugado dentro da tag details. Quando tenta usar \begin{}, não funciona)
+
+
+Resolvendo o sistema, obtemos:
+
+$$\large i_1 = 2,25A \qquad i_2 = 0,75A \qquad i_3 = 1,5A$$
+
+Portanto,
+
+$$\large I_0 = i_1 - i_2 = 1,5A$$
+
+</details>
+
+
+---
+
+Para circuitos com fontes de correntes, existem dois casos: quando a fonte de corrente está apenas em uma malha, ou quando ela está entre duas malhas.
+
+---
+
+### Exemplo
+
+Considere o seguinte circuito com uma fonte de corrente em uma malha:
+
+<p align="center">
+  <img height='200' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/46f16a20-84d1-4892-b2ae-7b4460488ce0" />
+</p>
+
+Nesse caso, aplicamos a LKT na malha 1:
+
+$$\large -10 + 4i_1 + 6(i_1 - i_2)$$
+
+Para a malha 2, temos que
+
+$$\large i_2 = -5A$$
+
+Com isso, é possível determinar $\large i_1$.
+
+---
+
+### Exemplo
+
+Considere o circuito com uma fonte de corrente em duas malhas:
+
+<p align="center">
+  <img height='300' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/90af2b48-bfdb-4225-83f2-723cbc167854" />
+</p>
+
+Nesse caso, criamos uma **supermalha**, excluindo a fonte de corrente e quaisquer elementos a ela associados em série.
+
+Aplicando a LKT na supermalha, temos:
+
+$$\large -20 + 6i_1 + 10i_2 + 4i_2 = 0$$
+
+$$\large 6i_1 + 14i_2 = 20$$
+
+Aplicando a LKC no nó inferior, temos:
+
+$$\large i_2 = i_1 + 6$$
+
+Resolvendo as equações, temos:
+
+$$i_1 = -3,2A \qquad i_2 = 2,8A$$
+
+---
+
+### Exemplo
+
+Determine $\large i_1$ a $\large i_4$ usando a análise de malhas.
+
+
+<p align="center">
+  <img height='400' src="https://github.com/MarcosYonamine963/curso-eletricidade-basica/assets/92953755/b11c37cc-82d5-45a7-8911-2d2f9191bcf2" />
+</p>
+
+
+<details>
+<summary>Solução</summary>
+
+* LKT na supermalha:
+
+$$\large 2i_1 + 4i_3 + 8(i_3 - i_4) + 6i_2 = 0$$
+
+$$\large i_1 + 3i_2 + 6i_3 - 4i_4 = 0$$
+
+
+* LKC no nó $\large P$
+
+$$\large i_2 = i_1 + 5$$
+
+* LKC no nó $\large Q$
+
+$$\large i_2 = i_3 + 3I_0$$
+
+Porém, $\large I_0 = -i_4$. Assim,
+
+$$\large i_2 = i_3 - 3i_4$$
+
+
+* LKT na malha 4:
+
+$$\large 2i_4 + 10 + 8(i_4 - i_3) = 0$$
+
+$$\large 5i_4 - 4i_3 = -5$$
+
+Assim, temos 4 equações independentes:
+
+* $\large i_1 + 3i_2 + 6i_3 - 4i_4 = 0$
+* $\large i_2 = i_1 + 5$
+* $\large i_2 = i_3 - 3i_4$
+* $\large 5i_4 - 4i_3 = -5$
+
+Solucionando o sistema, temos:
+
+$$\large i_1 = -7,5A \qquad i_2 = -2,5A \qquad i_3 = 3,93A \qquad i_4 = 2,143A$$
+
+</details>
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
 
 ## Análises nodal e de malhas por inspeção
 
